@@ -14,17 +14,17 @@
 
     <header>
         <div class="cont">
-            <a href="index.html" class="logo2"><img src="img/logo.png" alt=""></a>
+            <a href="index.php" class="logo2"><img src="img/logo.png" alt=""></a>
             <div class="nazvanie">
                 <label for="burger"><img src="./img/menu.png" alt=""></label>
                 <div class="menu2">
                     <div class="heart1">
                         <img class="img-heart" src="img/heart.png" alt="">
-                        <a href="catalog.html" class="navbar1">Курсы</a>
+                        <a href="catalog.php" class="navbar1">Курсы</a>
                     </div>
                     <div class="heart1">
                         <img class="img-heart" src="img/heart.png" alt="">
-                        <a href="comments.html" class="navbar1">Отзывы</a>
+                        <a href="comments.php" class="navbar1">Отзывы</a>
                     </div>
                     <div class="heart1">
                         <img class="img-heart" src="img/heart.png" alt="">
@@ -32,11 +32,11 @@
                     </div>
                     <div class="heart1">
                         <img class="img-heart" src="img/heart.png" alt="">
-                        <a href="account.html" class="navbar1">Личный кабинет</a>
+                        <a href="account.php" class="navbar1">Личный кабинет</a>
                     </div>
                     <div class="heart1">
                         <img class="img-heart" src="img/heart.png" alt="">
-                        <a href="entry.html" class="navbar1">Выход</a>
+                        <a href="entry.php" class="navbar1">Выход</a>
                     </div>
                 </div>
             </div>
@@ -80,25 +80,25 @@
             <div class="course">
                 <div class="course-card1">
                     <div class="course-nazv">Как подготовить лицо к <br> макияжу</div>
-                    <button class="course-btn">Продолжить</button>
+                    <button class="course-btn"><a class="course-btn-a" href="active_course.html">Продолжить</a></button>
                 </div>
             </div>
             <div class="course">
                 <div class="course-card2">
                     <div class="course-nazv">Идеальные стрелки</div>
-                    <button class="course-btn">Продолжить</button>
+                    <button class="course-btn"><a class="course-btn-a" href="active_course.html">Продолжить</a></button>
                 </div>
             </div>
             <div class="course">
                 <div class="course-card3">
                     <div class="course-nazv">Свадебный макияж</div>
-                    <button class="course-btn">Продолжить</button>
+                    <button class="course-btn"><a class="course-btn-a" href="active_course.html">Продолжить</a></button>
                 </div>
             </div>
             <div class="course">
                 <div class="course-card4">
                     <div class="course-nazv">Идеальный макияж для себя</div>
-                    <button class="course-btn">Продолжить</button>
+                    <button class="course-btn"><a class="course-btn-a" href="active_course.html">Продолжить</a></button>
                 </div>
             </div>
             <button class="show-more-btn2" id="show-more-btn2">Показать все</button>

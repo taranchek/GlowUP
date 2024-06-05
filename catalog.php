@@ -44,36 +44,36 @@
 
 
 
-  <header>
-    <div class="cont">
-      <a href="index.html" class="logo2"><img src="img/logo.png" alt=""></a>
-      <div class="nazvanie">
-        <label for="burger"><img src="./img/menu.png" alt=""></label>
-        <div class="menu2">
-          <div class="heart1">
-            <img class="img-heart" src="img/heart.png" alt="">
-            <a href="catalog.html" class="navbar1">Курсы</a>
-          </div>
-          <div class="heart1">
-            <img class="img-heart" src="img/heart.png" alt="">
-            <a href="comments.html" class="navbar1">Отзывы</a>
-          </div>
-          <div class="heart1">
-            <img class="img-heart" src="img/heart.png" alt="">
-            <a href="#contacts" class="navbar1">Контакты</a>
-          </div>
-          <div class="heart1">
-            <img class="img-heart" src="img/heart.png" alt="">
-            <a href="account.html" class="navbar1">Личный кабинет</a>
-          </div>
-          <div class="heart1">
-            <img class="img-heart" src="img/heart.png" alt="">
-            <a href="entry.html" class="navbar1">Вход</a>
-          </div>
+<header>
+        <div class="cont">
+            <a href="index.php" class="logo2"><img src="img/logo.png" alt=""></a>
+            <div class="nazvanie">
+                <label for="burger"><img src="./img/menu.png" alt=""></label>
+                <div class="menu2">
+                    <div class="heart1">
+                        <img class="img-heart" src="img/heart.png" alt="">
+                        <a href="catalog.php" class="navbar1">Курсы</a>
+                    </div>
+                    <div class="heart1">
+                        <img class="img-heart" src="img/heart.png" alt="">
+                        <a href="comments.php" class="navbar1">Отзывы</a>
+                    </div>
+                    <div class="heart1">
+                        <img class="img-heart" src="img/heart.png" alt="">
+                        <a href="#contacts" class="navbar1">Контакты</a>
+                    </div>
+                    <div class="heart1">
+                        <img class="img-heart" src="img/heart.png" alt="">
+                        <a href="account.php" class="navbar1">Личный кабинет</a>
+                    </div>
+                    <div class="heart1">
+                        <img class="img-heart" src="img/heart.png" alt="">
+                        <a href="entry.php" class="navbar1">Выход</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </header>
+    </header>
 
 
   <script>
@@ -92,52 +92,19 @@
     <div class="comment-text">Курсы по макияжу</div>
   </div>
 
-  <!-- <style>
-    .popular__block {
-      position: relative; /* Делаем так, чтобы абсолютно позиционированные элементы внутри блока позиционировались относительно него */
-      margin-bottom: 20px; /* Добавляем нижний отступ для разграничения блоков между собой */
-      padding: 20px;  /* Добавляем внутренние отступы для визуального разделения содержимого */
-      min-height: 200px; /* Устанавливаем минимальную высоту, чтобы было видно эффект */
-    }
-  
-    .description {
-      display: none; /* Изначально описание скрыто */
-      position: absolute; /* Абсолютное позиционирование относительно родителя */
-      bottom: 50px; /* Позиционируем описание над кнопкой */
-      left: 20px; /* Растягиваем по левому краю родителя */
-      right: 20px; /* Растягиваем по правому краю родителя */
-      background: #FBDEE1; /* Цвет фона для наглядности */
-      border-radius: 10px;
-      padding: 10px; /* Внутренние отступы для текста */
-      font-family: Raleway;
-      font-size: 20px;
-      font-weight: 500;
-      text-align: justify;
-      margin-bottom: 30px;
-    }
-  
-    .popular__block:hover .description {
-      display: block; /* При наведении делаем описание видимым */
-    }
-  
-    .popular-btn {
-      position: relative; /* Относительное позиционирование, чтобы кнопка могла корректно перемещаться */
-      bottom: -20px; /* Незначительно поднимаем кнопку над основным контентом */
-    }
-  </style> -->
 
   <div class="c-popular" id="for-whom">
     <div class="popular__blocks">
       <div class="popular__block">
         <h3>Как подготовить <br> лицо к макияжу</h3>
         <div class="photo-doc">
-          <a href="course.html"><img class="popular-img" src="img/women1.png" alt=""></a>
-          <a href="course.html"><img class="photo-c" src="img/bg-card.png" alt=""></a>
+          <a href="inactive_course.html"><img class="popular-img" src="img/women1.png" alt=""></a>
+          <a href="inactive_course.html"><img class="photo-c" src="img/bg-card.png" alt=""></a>
           <div class="description">Курс предназначен для тех, кто желает изучить основы ухода за кожей и научиться
             правильно подготавливать лицо перед нанесением макияжа. В процессе обучения участники узнают о базовых шагах
             ухода за кожей, правильном выборе косметических продуктов.</div>
         </div>
-        <a href="course.html"><button class="popular-btn">Начать прохождение</button></a>
+        <a href="inactive_course.html"><button class="popular-btn">Записаться</button></a>
       </div>
       <div class="popular__block">
         <h3>Идеальный <br> макияж для себя</h3>
@@ -147,7 +114,7 @@
           <div class="description">Поможет вам научиться создавать уникальный образ, подходящий именно вам. Вы изучите
             основы нанесения макияжа, выбор оттенков, коррекцию недостатков кожи и создание эффектных образов</div>
         </div>
-        <button class="popular-btn">Начать прохождение</button>
+        <a href="inactive_course.html"><button class="popular-btn">Записаться</button></a>
       </div>
       <div class="popular__block">
         <h3>Идеальные <br> стрелки</h3>
@@ -157,7 +124,7 @@
           <div class="description">Поможет вам освоить технику создания идеальных стрелок, которые подчеркнут форму и
             размер ваших глаз. Вы научитесь выбирать подходящие продукты и инструменты для создания стрелок</div>
         </div>
-        <button class="popular-btn">Начать прохождение</button>
+        <a href="inactive_course.html"><button class="popular-btn">Записаться</button></a>
       </div>
     </div>
     <div class="popular__blocks">
@@ -169,7 +136,7 @@
           <div class="description">Обучение тонкостям создания нежного и долговременного макияжа для невесты с учетом
             особенностей фото и видеозаписи</div>
         </div>
-        <button class="popular-btn">Начать прохождение</button>
+        <a href="inactive_course.html"><button class="popular-btn">Записаться</button></a>
       </div>
       <div class="popular__block">
         <h3>Вечерний <br> макияж</h3>
@@ -179,7 +146,7 @@
           <div class="description">Изучение методов создания выразительного и элегантного вечернего образа с
             использованием ярких оттенков и акцентов</div>
         </div>
-        <button class="popular-btn">Начать прохождение</button>
+        <a href="inactive_course.html"><button class="popular-btn">Записаться</button></a>
       </div>
       <div class="popular__block">
         <h3>Основы <br> макияжа</h3>
@@ -189,7 +156,7 @@
           <div class="description">Курс для начинающих, включающий в себя основные техники нанесения теней, подводки,
             румян и помады</div>
         </div>
-        <button class="popular-btn">Начать прохождение</button>
+        <a href="inactive_course.html"><button class="popular-btn">Записаться</button></a>
       </div>
     </div>
     <div class="popular__blocks">
@@ -201,7 +168,7 @@
           <div class="description">Изучение техник нанесения макияжа, которые подчеркивают естественную красоту и
             молодость лица</div>
         </div>
-        <button class="popular-btn">Начать прохождение</button>
+        <a href="inactive_course.html"><button class="popular-btn">Записаться</button></a>
       </div>
       <div class="popular__block">
         <h3>Театральный <br> макияж</h3>
@@ -211,7 +178,7 @@
           <div class="description">Обучение техникам макияжа, которые помогут создать яркие образы для сцены,
             подчеркивая выразительность черт лица. </div>
         </div>
-        <button class="popular-btn">Начать прохождение</button>
+        <a href="inactive_course.html"><button class="popular-btn">Записаться</button></a>
       </div>
       <div class="popular__block">
         <h3>Эффектный <br> макияж глаз</h3>
@@ -221,7 +188,7 @@
           <div class="description">Освоение техник нанесения теней и подводки для создания уникального и выразительного
             макияжа глаз</div>
         </div>
-        <button class="popular-btn">Начать прохождение</button>
+        <a href="inactive_course.html"><button class="popular-btn">Записаться</button></a>
       </div>
     </div>
   </div>

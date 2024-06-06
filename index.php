@@ -45,36 +45,36 @@
   </script>
 
 
-  <header>
-    <div class="cont">
-      <a href="index.html" class="logo2"><img src="img/logo.png" alt=""></a>
-      <div class="nazvanie">
-        <label for="burger"><img src="./img/menu.png" alt=""></label>
-        <div class="menu2">
-          <div class="heart1">
-            <img class="img-heart" src="img/heart.png" alt="">
-            <a href="catalog.html" class="navbar1">Курсы</a>
-          </div>
-          <div class="heart1">
-            <img class="img-heart" src="img/heart.png" alt="">
-            <a href="comments.html" class="navbar1">Отзывы</a>
-          </div>
-          <div class="heart1">
-            <img class="img-heart" src="img/heart.png" alt="">
-            <a href="#contacts" class="navbar1">Контакты</a>
-          </div>
-          <div class="heart1">
-            <img class="img-heart" src="img/heart.png" alt="">
-            <a href="account.html" class="navbar1">Личный кабинет</a>
-          </div>
-          <div class="heart1">
-            <img class="img-heart" src="img/heart.png" alt="">
-            <a href="entry.html" class="navbar1">Вход</a>
-          </div>
+<header>
+        <div class="cont">
+            <a href="index.php" class="logo2"><img src="img/logo.png" alt=""></a>
+            <div class="nazvanie">
+                <label for="burger"><img src="./img/menu.png" alt=""></label>
+                <div class="menu2">
+                    <div class="heart1">
+                        <img class="img-heart" src="img/heart.png" alt="">
+                        <a href="catalog.php" class="navbar1">Курсы</a>
+                    </div>
+                    <div class="heart1">
+                        <img class="img-heart" src="img/heart.png" alt="">
+                        <a href="comments.php" class="navbar1">Отзывы</a>
+                    </div>
+                    <div class="heart1">
+                        <img class="img-heart" src="img/heart.png" alt="">
+                        <a href="#contacts" class="navbar1">Контакты</a>
+                    </div>
+                    <div class="heart1">
+                        <img class="img-heart" src="img/heart.png" alt="">
+                        <a href="account.php" class="navbar1">Личный кабинет</a>
+                    </div>
+                    <div class="heart1">
+                        <img class="img-heart" src="img/heart.png" alt="">
+                        <a href="entry.php" class="navbar1">Выход</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </header>
+    </header>
 
   <script>
     document.querySelector('.burger').addEventListener('click', function () {
@@ -289,7 +289,7 @@ overlay.onclick = function() {
   <div class="c-obuch">
     <div class="screen">
       <div class="zag">Как проходит обучение?</div>
-      <div class="content">
+      <div class="content2">
         <img src="img/obuch.png" alt="Изображение" class="img-obuch">
         <div class="text">
           <div class="obuch">

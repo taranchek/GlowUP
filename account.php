@@ -80,13 +80,13 @@
             <div class="course">
                 <div class="course-card1">
                     <div class="course-nazv">Как подготовить лицо к <br> макияжу</div>
-                    <button class="course-btn"><a class="course-btn-a" href="active_course.html">Продолжить</a></button>
+                    <button class="course-btn"><a class="course-btn-a" href="active_course.php">Продолжить</a></button>
                 </div>
             </div>
             <div class="course">
                 <div class="course-card2">
                     <div class="course-nazv">Идеальные стрелки</div>
-                    <button class="course-btn"><a class="course-btn-a" href="active_course.html">Продолжить</a></button>
+                    <button class="course-btn"><a class="course-btn-a" href="active_course.php">Продолжить</a></button>
                 </div>
             </div>
             <div class="course">

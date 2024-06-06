@@ -12,19 +12,19 @@
 
 <body>
 
-    <header>
+<header>
         <div class="cont">
-            <a href="index.html" class="logo2"><img src="img/logo.png" alt=""></a>
+            <a href="index.php" class="logo2"><img src="img/logo.png" alt=""></a>
             <div class="nazvanie">
                 <label for="burger"><img src="./img/menu.png" alt=""></label>
                 <div class="menu2">
                     <div class="heart1">
                         <img class="img-heart" src="img/heart.png" alt="">
-                        <a href="catalog.html" class="navbar1">Курсы</a>
+                        <a href="catalog.php" class="navbar1">Курсы</a>
                     </div>
                     <div class="heart1">
                         <img class="img-heart" src="img/heart.png" alt="">
-                        <a href="comments.html" class="navbar1">Отзывы</a>
+                        <a href="comments.php" class="navbar1">Отзывы</a>
                     </div>
                     <div class="heart1">
                         <img class="img-heart" src="img/heart.png" alt="">
@@ -32,11 +32,11 @@
                     </div>
                     <div class="heart1">
                         <img class="img-heart" src="img/heart.png" alt="">
-                        <a href="account.html" class="navbar1">Личный кабинет</a>
+                        <a href="account.php" class="navbar1">Личный кабинет</a>
                     </div>
                     <div class="heart1">
                         <img class="img-heart" src="img/heart.png" alt="">
-                        <a href="entry.html" class="navbar1">Вход</a>
+                        <a href="entry.php" class="navbar1">Выход</a>
                     </div>
                 </div>
             </div>
@@ -83,7 +83,7 @@
                 <input class="pole-inp" type="password">
                 <button class="btn-register">Зарегистрироваться</button>
             </div>
-            <div class="nazv-pole rega-kn">Уже есть аккаунт? <a class="rega" href="entry.html">Войти</a></div>
+            <div class="nazv-pole rega-kn">Уже есть аккаунт? <a class="rega" href="entry.php">Войти</a></div>
 
 
         </div>

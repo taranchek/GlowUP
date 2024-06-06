@@ -12,36 +12,36 @@
 
 <body>
 
-  <header>
-    <div class="cont">
-      <a href="index.html" class="logo2"><img src="img/logo.png" alt=""></a>
-      <div class="nazvanie">
-        <label for="burger"><img src="./img/menu.png" alt=""></label>
-        <div class="menu2">
-          <div class="heart1">
-            <img class="img-heart" src="img/heart.png" alt="">
-            <a href="catalog.html" class="navbar1">Курсы</a>
-          </div>
-          <div class="heart1">
-            <img class="img-heart" src="img/heart.png" alt="">
-            <a href="comments.html" class="navbar1">Отзывы</a>
-          </div>
-          <div class="heart1">
-            <img class="img-heart" src="img/heart.png" alt="">
-            <a href="#contacts" class="navbar1">Контакты</a>
-          </div>
-          <div class="heart1">
-            <img class="img-heart" src="img/heart.png" alt="">
-            <a href="account.html" class="navbar1">Личный кабинет</a>
-          </div>
-          <div class="heart1">
-            <img class="img-heart" src="img/heart.png" alt="">
-            <a href="entry.html" class="navbar1">Вход</a>
-          </div>
+<header>
+        <div class="cont">
+            <a href="index.php" class="logo2"><img src="img/logo.png" alt=""></a>
+            <div class="nazvanie">
+                <label for="burger"><img src="./img/menu.png" alt=""></label>
+                <div class="menu2">
+                    <div class="heart1">
+                        <img class="img-heart" src="img/heart.png" alt="">
+                        <a href="catalog.php" class="navbar1">Курсы</a>
+                    </div>
+                    <div class="heart1">
+                        <img class="img-heart" src="img/heart.png" alt="">
+                        <a href="comments.php" class="navbar1">Отзывы</a>
+                    </div>
+                    <div class="heart1">
+                        <img class="img-heart" src="img/heart.png" alt="">
+                        <a href="#contacts" class="navbar1">Контакты</a>
+                    </div>
+                    <div class="heart1">
+                        <img class="img-heart" src="img/heart.png" alt="">
+                        <a href="account.php" class="navbar1">Личный кабинет</a>
+                    </div>
+                    <div class="heart1">
+                        <img class="img-heart" src="img/heart.png" alt="">
+                        <a href="entry.php" class="navbar1">Выход</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </header>
+    </header>
 
 
   <script>
@@ -69,20 +69,20 @@
         <input class="pole-inp" type="password">
         <button class="btn-register">Войти</button>
       </div>
-      <div class="nazv-pole rega-kn">Нет аккаунта? <a class="rega" href="registration.html">Загегистрироваться</a>
+      <div class="nazv-pole rega-kn">Нет аккаунта? <a class="rega" href="registration.php">Загегистрироваться</a>
       </div>
     </div>
   </div>
 
   <footer class="footer" id="contacts">
     <div class="column">
-      <a href="index.html"><img src="img/logo.png" alt="" class="logo"></a>
+      <a href="index.php"><img src="img/logo.png" alt="" class="logo"></a>
       <div class="oferta">© 2020 - 2023 «GLOW UP Beauty <br> School». ВСЕ ПРАВА ЗАЩИЩЕНЫ. </div>
     </div>
     <div class="column">
-      <a class="footer-text" href="catalog.html">Курсы</a>
-      <a class="footer-text" href="comments.html">Отзывы</a>
-      <a class="footer-text" href="account.html">Личный кабинет</a>
+      <a class="footer-text" href="catalog.php">Курсы</a>
+      <a class="footer-text" href="comments.php">Отзывы</a>
+      <a class="footer-text" href="account.php">Личный кабинет</a>
     </div>
     <div class="column">
       <div class="network">

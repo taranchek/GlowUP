@@ -94,17 +94,17 @@
 
 
   <div class="c-popular" id="for-whom">
-    <div class="popular__blocks">
+    <div class="popular__blocks2">
       <div class="popular__block">
         <h3>Как подготовить <br> лицо к макияжу</h3>
         <div class="photo-doc">
-          <a href="inactive_course.html"><img class="popular-img" src="img/women1.png" alt=""></a>
-          <a href="inactive_course.html"><img class="photo-c" src="img/bg-card.png" alt=""></a>
+          <a href="inactive_course.php"><img class="popular-img" src="img/women1.png" alt=""></a>
+          <a href="inactive_course.php"><img class="photo-c" src="img/bg-card.png" alt=""></a>
           <div class="description">Курс предназначен для тех, кто желает изучить основы ухода за кожей и научиться
             правильно подготавливать лицо перед нанесением макияжа. В процессе обучения участники узнают о базовых шагах
             ухода за кожей, правильном выборе косметических продуктов.</div>
         </div>
-        <a href="inactive_course.html"><button class="popular-btn">Записаться</button></a>
+        <a href="inactive_course.php"><button class="popular-btn">Записаться</button></a>
       </div>
       <div class="popular__block">
         <h3>Идеальный <br> макияж для себя</h3>
@@ -127,7 +127,7 @@
         <a href="inactive_course.html"><button class="popular-btn">Записаться</button></a>
       </div>
     </div>
-    <div class="popular__blocks">
+    <div class="popular__blocks2">
       <div class="popular__block">
         <h3>Сводебный <br> макияж</h3>
         <div class="photo-doc">
@@ -159,7 +159,7 @@
         <a href="inactive_course.html"><button class="popular-btn">Записаться</button></a>
       </div>
     </div>
-    <div class="popular__blocks">
+    <div class="popular__blocks2">
       <div class="popular__block">
         <h3>Натуральный <br> макияж</h3>
         <div class="photo-doc">

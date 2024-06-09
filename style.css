@@ -478,9 +478,7 @@
 
 .obuch {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    /* Для выравнивания элементов по верхнему краю */
+    
 }
 
 .obuch-num {
@@ -1482,7 +1480,8 @@ p {
 }
 
 .btn-course {
-    margin-top: 175px;
+    bottom: 83px;
+    position: absolute;
     background-color: white;
     border-radius: 30px;
     border: 3px solid #F4A2AA;
@@ -1544,8 +1543,7 @@ p {
     text-align: left;
 }
 
-.lesson,
-.lesson2 {
+.lesson {
     background-color: #fff;
     margin-left: 220px;
     margin-right: 220px;
@@ -1564,7 +1562,7 @@ p {
     filter: drop-shadow(0px 4px 15px #757575);
 }
 
-.lesson-a {
+.lesson-a, .lesson-a2 {
     color: #000;
     font-family: Raleway;
     text-decoration: none;
@@ -1637,6 +1635,7 @@ p {
     }
     
     .btn-course {
+        position: static;
         margin-top: 55px;
         width: 250px;
         height: 60px;
@@ -1697,99 +1696,148 @@ p {
 }
 
 
+/* СТРАНИЦА УРОКА */
+.lesson-cont {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+    margin-left: 70px;
+    margin-bottom: 25px;
+}
+.lesson2 {
+    background-color: #fff;
+    filter: drop-shadow(0px 4px 7px #757575);
+    border-radius: 20px;
+    padding: 10px 15px;
+    text-align: left;
+    margin-bottom: 30px;
+    color: #000;
+    font-family: Raleway;
+    text-decoration: none;
+    width: 235px;
+    height: 110px;
+}
+.lesson-num2 {
+    font-size: 24px;
+    font-weight: 550;
+    text-decoration: underline;
+}
 
-
-/* * {
-    box-sizing: border-box;
-} */
-
+.lesson-nazv2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+.learn2 {
+    margin: 0 60px;
+    padding: 20px 60px;
+    background-color: #FFE2E5;
+    border-radius: 100px;
+}
+.zag-learn {
+    text-align: center;
+    font-family: toony_loons;
+    font-size: 64px;
+    font-weight: 550;
+}
+.nazv-learn {
+    font-size: 32px;
+    font-family: Raleway;
+}
+.theory-learn {
+    margin-top: 40px;
+    font-size: 24px;
+}
 
 .wrapper {
     display: flex;
-    justify-content: center;
-}
-
-.cta {
-    display: flex;
-    padding: 10px 45px;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-size: 40px;
-    color: white;
-    background: #F4A2AA;
-    transition: 1s;
-    box-shadow: 6px 6px 0 rgb(227, 227, 227);
-    transform: skewX(-15deg);
-}
-
-.cta:focus {
-    outline: none;
-}
-
-.cta:hover {
-    transition: 0.5s;
-    box-shadow: 10px 10px 0 #FDECEE;
-}
-
-.cta span:nth-child(2) {
-    transition: 0.5s;
-    margin-right: 0px;
-}
-
-.cta:hover span:nth-child(2) {
-    transition: 0.5s;
-    margin-right: 45px;
-}
-
-span {
-    transform: skewX(15deg);
-}
-
-span:nth-child(2) {
-    width: 20px;
-    margin-left: 30px;
-    position: relative;
-    top: 12%;
-}
-
-*************SVG***************
-
-path.one {
-    transition: 0.4s;
-    transform: translateX(-60%);
-}
-
-path.two {
-    transition: 0.5s;
-    transform: translateX(-30%);
-}
-
-.cta:hover path.three {
-    animation: color_anim 1s infinite 0.2s;
-}
-
-.cta:hover path.one {
-    transform: translateX(0%);
-    animation: color_anim 1s infinite 0.6s;
-}
-
-.cta:hover path.two {
-    transform: translateX(0%);
-    animation: color_anim 1s infinite 0.4s;
-}
-
-/* SVG animations */
-
-@keyframes color_anim {
-    0% {
-        fill: white;
+    justify-content: right;
+    align-items: center;
+    margin-top: 35px;
+    margin-right: 15px;
+  }
+  
+  .cta {
+      display: flex;
+      padding: 10px 35px;
+      text-decoration: none;
+      font-family: Raleway;
+      font-size: 32px;
+      font-weight: 600;
+      color: white;
+      background: #F4A2AA;
+      transition: 1s;
+      border-radius: 20px;
+      box-shadow: 6px 6px 0 #E3E3E3;
+      transform: skewX(-15deg);
+  }
+  
+  .cta:focus {
+     outline: none; 
+  }
+  
+  .cta:hover {
+      transition: 0.5s;
+      box-shadow: 10px 10px 0 #ffffff;
+  }
+  
+  .cta span:nth-child(2) {
+      transition: 0.5s;
+      margin-right: 0px;
+  }
+  
+  .cta:hover  span:nth-child(2) {
+      transition: 0.5s;
+      margin-right: 45px;
+  }
+  
+    span {
+      transform: skewX(15deg) 
     }
-
-    50% {
-        fill: #FDECEE;
+  
+    span:nth-child(2) {
+      width: 20px;
+      margin-left: 30px;
+      position: relative;
+      top: 12%;
     }
-
-    100% {
-        fill: white;
-    }
-} 
+    
+  /**************SVG****************/
+  
+  path.one {
+      transition: 0.4s;
+      transform: translateX(-60%);
+  }
+  
+  path.two {
+      transition: 0.5s;
+      transform: translateX(-30%);
+  }
+  
+  .cta:hover path.three {
+      animation: color_anim 1s infinite 0.2s;
+  }
+  
+  .cta:hover path.one {
+      transform: translateX(0%);
+      animation: color_anim 1s infinite 0.6s;
+  }
+  
+  .cta:hover path.two {
+      transform: translateX(0%);
+      animation: color_anim 1s infinite 0.4s;
+  }
+  
+  /* SVG animations */
+  
+  @keyframes color_anim {
+      0% {
+          fill: white;
+      }
+      50% {
+          fill: #ffcbe0;
+      }
+      100% {
+          fill: white;
+      }
+  }

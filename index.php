@@ -282,7 +282,10 @@ overlay.onclick = function() {
   </script>
 
 
-
+  <div class="author">
+    <div class="zag">Автор курсов</div>
+    
+  </div>
 
 
 

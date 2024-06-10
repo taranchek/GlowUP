@@ -102,7 +102,7 @@
   </div>
   <div class="program-cont">
     <div class="zag-program">Программа курса</div>
-    <div class="lesson"><a class="lesson-a" href="">
+    <div class="lesson"><a class="lesson-a" href="lesson.php">
         <div class="lesson-num">Урок 1</div>
         <div class="lesson-nazv">Основы</div>
         <div class="lesson-opisan">Объяснение принципов и целей макияжа, обеспечивающего натуральный и свежий вид</div>

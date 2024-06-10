@@ -7,6 +7,10 @@
     font-family: toony_loons;
     src: url(fonts/toony_loons.ttf.otf);
 }
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-Regular.ttf);
+}
 
 * {
     margin: 0;
@@ -43,7 +47,7 @@
 .navbar1 {
     padding-left: 5px;
     font-size: 24px;
-    font-family: Raleway;
+    font-family: Montserrat;
     text-decoration: none;
     color: black;
     font-weight: 500;
@@ -124,14 +128,14 @@
 }
 
 .text-offer2 {
-    font-family: Raleway;
+    font-family: Montserrat;
     font-size: 28px;
     margin-top: 20px;
     font-weight: 550;
 }
 
 .btn-offer {
-    font-family: Raleway;
+    font-family: Montserrat;
     font-weight: 550;
     width: 380px;
     height: 95px;
@@ -262,6 +266,7 @@
 .for-whom__blocks {
     display: flex;
     justify-content: space-around;
+    font-family: Montserrat;
 }
 
 .for-whom__block {
@@ -312,7 +317,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font-family: Raleway;
+    font-family: Montserrat;
     font-size: 32px;
     font-weight: 600;
 }
@@ -342,7 +347,7 @@
     transition: opacity 0.5s;
     z-index: 3;
     margin: 0 auto;
-    font-family: Raleway;
+    font-family: Montserrat;
     font-size: 20px;
     text-align: left;
 }
@@ -368,6 +373,10 @@
     .popular__block {
         margin-bottom: 20px;
         margin-top: 20px;
+    }
+    .learn__block {
+        display: flex;
+        justify-content: space-between;
     }
 }
 
@@ -443,6 +452,8 @@
     }
 }
 
+/* СТРАНИЦА АВТОРА */
+
 .c-obuch {
     background: url(img/bg3.png) no-repeat center center;
     background-size: cover;
@@ -498,14 +509,14 @@
 .obuch-title {
     margin-top: 20px;
     font-weight: bold;
-    font-family: Raleway;
+    font-family: Montserrat;
     font-size: 32px;
     font-weight: 500;
 }
 
 p {
     margin-top: 10px;
-    font-family: Raleway;
+    font-family: Montserrat;
     font-size: 20px;
 }
 
@@ -604,7 +615,7 @@ p {
 
 .text-motiv {
     text-align: center;
-    font-family: Raleway;
+    font-family: Montserrat;
     font-size: 40px;
     font-weight: 500;
     font-style: italic;
@@ -630,7 +641,7 @@ p {
 .column {
     display: grid;
     margin-top: 30px;
-    font-family: Raleway;
+    font-family: Montserrat;
     font-size: 22px;
     font-weight: 600;
 }
@@ -762,7 +773,7 @@ p {
 .text-inp {
     text-align: left;
     font-size: 20px;
-    font-family: Raleway;
+    font-family: Montserrat;
     margin-left: 23%;
 }
 
@@ -774,7 +785,7 @@ p {
     border: 4px solid #F4A2AA;
     padding-left: 10px;
     font-size: 20px;
-    font-family: Raleway;
+    font-family: Montserrat;
     margin: auto;
 }
 
@@ -784,7 +795,7 @@ p {
 
 .nazv-pole {
     font-size: 20px;
-    font-family: Raleway;
+    font-family: Montserrat;
     margin: auto;
     text-decoration: none;
     color: #000;
@@ -798,7 +809,7 @@ p {
     border: none;
     margin: auto;
     font-size: 28px;
-    font-family: Raleway;
+    font-family: Montserrat;
     font-weight: 600;
     margin-top: 25px;
 }
@@ -1009,7 +1020,7 @@ p {
 }
 
 .name {
-    font-family: Raleway;
+    font-family: Montserrat;
     font-weight: 550;
     font-size: 24px;
     color: black;
@@ -1018,7 +1029,7 @@ p {
 }
 
 .date {
-    font-family: Raleway;
+    font-family: Montserrat;
     font-weight: 400;
     font-size: 20px;
     color: black;
@@ -1028,7 +1039,7 @@ p {
 }
 
 .otzyv {
-    font-family: Raleway;
+    font-family: Montserrat;
     font-weight: 550;
     font-size: 24px;
     color: black;
@@ -1043,7 +1054,7 @@ p {
 }
 
 .show-more-btn {
-    font-family: Raleway;
+    font-family: Montserrat;
     font-weight: 550;
     width: 380px;
     height: 70px;
@@ -1119,7 +1130,7 @@ p {
 .account {
     display: flex;
     justify-content: space-around;
-    font-family: Raleway;
+    font-family: Montserrat;
     font-weight: 600;
     color: #000;
     padding: 0 150px;
@@ -1195,7 +1206,7 @@ p {
 }
 
 .courses {
-    font-family: Raleway;
+    font-family: Montserrat;
     text-align: center;
     display: flex;
     /* Используем flexbox для управления расположением элементов внутри блока */
@@ -1280,7 +1291,7 @@ p {
 }
 
 .show-more-btn2 {
-    font-family: Raleway;
+    font-family: Montserrat;
     font-weight: 550;
     width: 380px;
     height: 70px;
@@ -1406,7 +1417,7 @@ p {
 }
 
 .btn-error {
-    font-family: Raleway;
+    font-family: Montserrat;
     font-weight: 550;
     width: 380px;
     height: 95px;
@@ -1465,7 +1476,7 @@ p {
 
 .infa-course {
     text-align: left;
-    font-family: Raleway;
+    font-family: Montserrat;
 }
 
 .nazv-course {
@@ -1490,7 +1501,7 @@ p {
     text-decoration: none;
     width: 390px;
     height: 65px;
-    font-family: Raleway;
+    font-family: Montserrat;
     font-size: 32px;
 }
 
@@ -1519,7 +1530,7 @@ p {
     padding-left: 260px;
     padding-bottom: 25px;
     font-size: 32px;
-    font-family: Raleway;
+    font-family: Montserrat;
 }
 
 .text-willbe {
@@ -1530,7 +1541,7 @@ p {
     filter: drop-shadow(0px 4px 70px #F4A2AA);
     border-radius: 20px;
     font-size: 24px;
-    font-family: Raleway;
+    font-family: Montserrat;
     font-weight: 500;
 }
 
@@ -1554,7 +1565,7 @@ p {
     text-align: left;
     margin-bottom: 60px;
     color: #000;
-    font-family: Raleway;
+    font-family: Montserrat;
     text-decoration: none;
 }
 
@@ -1564,7 +1575,7 @@ p {
 
 .lesson-a, .lesson-a2 {
     color: #000;
-    font-family: Raleway;
+    font-family: Montserrat;
     text-decoration: none;
 }
 
@@ -1584,7 +1595,7 @@ p {
 }
 
 .show-more-btn3 {
-    font-family: Raleway;
+    font-family: Montserrat;
     font-weight: 550;
     width: 380px;
     height: 70px;
@@ -1712,7 +1723,7 @@ p {
     text-align: left;
     margin-bottom: 30px;
     color: #000;
-    font-family: Raleway;
+    font-family: Montserrat;
     text-decoration: none;
     width: 235px;
     height: 110px;
@@ -1742,7 +1753,7 @@ p {
 }
 .nazv-learn {
     font-size: 32px;
-    font-family: Raleway;
+    font-family: Montserrat;
 }
 .theory-learn {
     margin-top: 40px;
@@ -1761,7 +1772,7 @@ p {
       display: flex;
       padding: 10px 35px;
       text-decoration: none;
-      font-family: Raleway;
+      font-family: Montserrat;
       font-size: 32px;
       font-weight: 600;
       color: white;

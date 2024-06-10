@@ -90,43 +90,43 @@
 
   <div class="lesson-cont">
     <div class="learn1">
-        <div class="lesson2"><a class="lesson-a2" href="">
+        <div class="lesson3"><a class="lesson-a2" href="">
             <div class="lesson-num2">Урок 1</div>
             <div class="lesson-nazv2">Основы</div>
         </a></div>
-        <div class="lesson2"><a class="lesson-a2" href="">
+        <div class="lesson3"><a class="lesson-a2" href="">
             <div class="lesson-num2">Урок 2</div>
             <div class="lesson-nazv2">Подготовка кожи</div>
         </a></div>
-        <div class="lesson2"><a class="lesson-a2" href="">
+        <div class="lesson3"><a class="lesson-a2" href="">
             <div class="lesson-num2">Урок 3</div>
             <div class="lesson-nazv2">Подбор тонального средства</div>
         </a></div>
-        <div class="lesson2"><a class="lesson-a2" href="">
+        <div class="lesson3"><a class="lesson-a2" href="">
             <div class="lesson-num2">Урок 4</div>
             <div class="lesson-nazv2">Коррекция и выравнивание</div>
         </a></div>
-        <div class="lesson2"><a class="lesson-a2" href="">
+        <div class="lesson3"><a class="lesson-a2" href="">
             <div class="lesson-num2">Урок 5</div>
             <div class="lesson-nazv2">Макияж глаз</div>
         </a></div>
-        <div class="lesson2"><a class="lesson-a2" href="">
+        <div class="lesson3"><a class="lesson-a2" href="">
             <div class="lesson-num2">Урок 6</div>
             <div class="lesson-nazv2">Макияж губ</div>
         </a></div>
-        <div class="lesson2"><a class="lesson-a2" href="">
+        <div class="lesson3"><a class="lesson-a2" href="">
             <div class="lesson-num2">Урок 7</div>
             <div class="lesson-nazv2">Контурирование и хайлайтинг</div>
         </a></div>
-        <div class="lesson2"><a class="lesson-a2" href="">
+        <div class="lesson3"><a class="lesson-a2" href="">
             <div class="lesson-num2">Урок 8</div>
             <div class="lesson-nazv2">Техники нанесения макияжа</div>
         </a></div>
-        <div class="lesson2"><a class="lesson-a2" href="">
+        <div class="lesson3"><a class="lesson-a2" href="">
             <div class="lesson-num2">Урок 9</div>
             <div class="lesson-nazv2">Советы по уходу за кожей</div>
         </a></div>
-        <div class="lesson2"><a class="lesson-a2" href="">
+        <div class="lesson3"><a class="lesson-a2" href="">
             <div class="lesson-nazv2">Итоговое тестирование</div>
         </a></div>
     </div>

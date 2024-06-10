@@ -12,6 +12,67 @@
     src: url(fonts/Montserrat-Regular.ttf);
 }
 
+
+
+/* Модальное окно для авторизации и регистрации */
+.dialog-window {
+    margin: auto;
+    max-width: 450px;
+    border-radius: 30px;
+    padding: 30px;
+    font-family: Raleway;
+}
+
+/* Кнопка в этом окне */
+.dialog-button {
+    margin: 30px auto auto;
+    display: block;
+    border-radius: 30px;
+    padding-inline: 40px;
+    padding-block: 10px;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: Raleway;
+}
+
+/**********************************************/
+.cards-course {
+    padding-top: 15px;
+    margin-left: 140px;
+    margin-right: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*width: 75%;*/
+    text-align: center;
+    align-items: center;
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+/**********************************************/
+.card-course {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 70px;
+}
+
+.card-course:hover .photo-c {
+    opacity: 1;
+}
+
+.card-course:hover .description {
+    opacity: 1;
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -150,7 +211,7 @@
 
 .btn-offer:hover {
     background-color: #e05c69;
-    ;
+;
 }
 
 .btn-offer-a {
@@ -392,7 +453,7 @@
 
 .popular-btn:hover {
     background-color: #e05c69;
-    ;
+;
 }
 
 .zag2 {
@@ -489,7 +550,7 @@
 
 .obuch {
     display: flex;
-    
+
 }
 
 .obuch-num {
@@ -1070,7 +1131,7 @@ p {
 
 .show-more-btn:hover {
     background-color: #e05c69;
-    ;
+;
 }
 
 .reviews {
@@ -1192,7 +1253,7 @@ p {
 
 .acc-btn:hover {
     background-color: #e05c69;
-    ;
+;
 }
 
 .izma {
@@ -1287,7 +1348,7 @@ p {
 
 .course-btn:hover {
     background-color: #e05c69;
-    ;
+;
 }
 
 .show-more-btn2 {
@@ -1306,7 +1367,7 @@ p {
 
 .show-more-btn2:hover {
     background-color: #e05c69;
-    ;
+;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1434,7 +1495,7 @@ p {
 
 .btn-error:hover {
     background-color: #e05c69;
-    ;
+;
 }
 
 .btn-error-a {
@@ -1554,7 +1615,7 @@ p {
     text-align: left;
 }
 
-.lesson {
+.lesson, .lesson2 {
     background-color: #fff;
     margin-left: 220px;
     margin-right: 220px;
@@ -1611,7 +1672,7 @@ p {
 
 .show-more-btn3:hover {
     background-color: #e05c69;
-    ;
+;
 }
 
 .course-btn-a {
@@ -1629,7 +1690,7 @@ p {
         font-size: 50px;
         margin-top: 15px;
     }
-    
+
     .course-block {
         display: block;
         margin-top: 30px;
@@ -1644,7 +1705,7 @@ p {
     .onisan-course {
         font-size: 20px;
     }
-    
+
     .btn-course {
         position: static;
         margin-top: 55px;
@@ -1655,19 +1716,19 @@ p {
     .course-img {
         display: none;
     }
-    
+
     .willbe {
         padding-top: 25px;
         padding-bottom: 25px;
     }
-    
+
     .zag-willbe,
     .zag-program {
         padding-left: 15px;
         padding-bottom: 25px;
         font-size: 24px;
     }
-    
+
     .text-willbe {
         margin-left: 15px;
         margin-right: 15px;
@@ -1678,7 +1739,7 @@ p {
     .zag-program {
         padding-top: 30px;
     }
-    
+
     .lesson,
     .lesson2 {
         margin-left: 15px;
@@ -1691,12 +1752,12 @@ p {
     .lesson-nazv {
         margin-top: 10px;
     }
-    
+
     .lesson-opisan {
         font-size: 18px;
         margin-top: 10px;
     }
-    
+
     .show-more-btn3 {
         width: 250px;
         height: 60px;
@@ -1715,7 +1776,7 @@ p {
     margin-left: 70px;
     margin-bottom: 25px;
 }
-.lesson2 {
+.lesson3 {
     background-color: #fff;
     filter: drop-shadow(0px 4px 7px #757575);
     border-radius: 20px;
@@ -1735,7 +1796,7 @@ p {
 }
 
 .lesson-nazv2 {
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 500;
     margin-top: 5px;
 }
@@ -1766,89 +1827,89 @@ p {
     align-items: center;
     margin-top: 35px;
     margin-right: 15px;
-  }
-  
-  .cta {
-      display: flex;
-      padding: 10px 35px;
-      text-decoration: none;
-      font-family: Montserrat;
-      font-size: 32px;
-      font-weight: 600;
-      color: white;
-      background: #F4A2AA;
-      transition: 1s;
-      border-radius: 20px;
-      box-shadow: 6px 6px 0 #E3E3E3;
-      transform: skewX(-15deg);
-  }
-  
-  .cta:focus {
-     outline: none; 
-  }
-  
-  .cta:hover {
-      transition: 0.5s;
-      box-shadow: 10px 10px 0 #ffffff;
-  }
-  
-  .cta span:nth-child(2) {
-      transition: 0.5s;
-      margin-right: 0px;
-  }
-  
-  .cta:hover  span:nth-child(2) {
-      transition: 0.5s;
-      margin-right: 45px;
-  }
-  
-    span {
-      transform: skewX(15deg) 
+}
+
+.cta {
+    display: flex;
+    padding: 10px 35px;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+    background: #F4A2AA;
+    transition: 1s;
+    border-radius: 20px;
+    box-shadow: 6px 6px 0 #E3E3E3;
+    transform: skewX(-15deg);
+}
+
+.cta:focus {
+    outline: none;
+}
+
+.cta:hover {
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 #ffffff;
+}
+
+.cta span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 0px;
+}
+
+.cta:hover  span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 45px;
+}
+
+span {
+    transform: skewX(15deg)
+}
+
+span:nth-child(2) {
+    width: 20px;
+    margin-left: 30px;
+    position: relative;
+    top: 12%;
+}
+
+/**************SVG****************/
+
+path.one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+}
+
+path.two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+}
+
+.cta:hover path.three {
+    animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover path.one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover path.two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations */
+
+@keyframes color_anim {
+    0% {
+        fill: white;
     }
-  
-    span:nth-child(2) {
-      width: 20px;
-      margin-left: 30px;
-      position: relative;
-      top: 12%;
+    50% {
+        fill: #ffcbe0;
     }
-    
-  /**************SVG****************/
-  
-  path.one {
-      transition: 0.4s;
-      transform: translateX(-60%);
-  }
-  
-  path.two {
-      transition: 0.5s;
-      transform: translateX(-30%);
-  }
-  
-  .cta:hover path.three {
-      animation: color_anim 1s infinite 0.2s;
-  }
-  
-  .cta:hover path.one {
-      transform: translateX(0%);
-      animation: color_anim 1s infinite 0.6s;
-  }
-  
-  .cta:hover path.two {
-      transform: translateX(0%);
-      animation: color_anim 1s infinite 0.4s;
-  }
-  
-  /* SVG animations */
-  
-  @keyframes color_anim {
-      0% {
-          fill: white;
-      }
-      50% {
-          fill: #ffcbe0;
-      }
-      100% {
-          fill: white;
-      }
-  }
+    100% {
+        fill: white;
+    }
+}

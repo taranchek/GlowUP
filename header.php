@@ -6,8 +6,35 @@ session_start();
     <div class="cont">
         <a href="index.php" class="logo2"><img src="img/logo.png" alt=""></a>
         <div class="nazvanie">
-            <label for="burger"><img src="./img/menu.png" alt=""></label>
+            <label for="burger" class="burger-label"><img src="./img/menu.png" alt="menu icon"></label>
             <div class="menu2">
+                <div class="heart1">
+                    <img class="img-heart" src="img/heart.png" alt="">
+                    <a href="catalog.php" class="navbar1">Курсы</a>
+                </div>
+                <div class="heart1">
+                    <img class="img-heart" src="img/heart.png" alt="">
+                    <a href="comments.php" class="navbar1">Отзывы</a>
+                </div>
+                <div class="heart1">
+                    <img class="img-heart" src="img/heart.png" alt="">
+                    <a href="#contacts" class="navbar1">Контакты</a>
+                </div>
+                <div class="heart1">
+                    <img class="img-heart" src="img/heart.png" alt="">
+                    <a href="account.php" class="navbar1">Личный кабинет</a>
+                </div>
+                <div class="heart1">
+                    <img class="img-heart" src="img/heart.png" alt="">
+                    <?php if (!isset($_SESSION["userID"])) { ?>
+                        <a href="entry.php" class="navbar1">Вход</a>
+                    <?php } else { ?>
+                        <a href="backend/logout.php" class="navbar1">Выход</a>
+                    <?php } ?>
+                </div>
+            </div>
+            <!-- Выпадающее меню-шторка -->
+            <div class="dropdown-menuгг">
                 <div class="heart1">
                     <img class="img-heart" src="img/heart.png" alt="">
                     <a href="catalog.php" class="navbar1">Курсы</a>
@@ -36,6 +63,14 @@ session_start();
         </div>
     </div>
 </header>
+
+<!--  -->
+<script>
+document.querySelector('.burger-label').addEventListener('click', function() {
+    console.log('Burger menu clicked');
+    document.querySelector('.dropdown-menurr').classList.toggle('show-menu');
+});
+</script>
 
 <!-- КНОПКА ДЛЯ ПРОКРУТКИ К НАЧАЛУ СТРАНИЦЫ -->
 <div class="btn-up btn-up_hide"></div>
@@ -73,19 +108,6 @@ session_start();
         e.preventDefault();
         document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
-        });
-    });
-</script>
-
-<!-- ЛОГИКА ОТОБРАЖЕНИЯ ЭЛЕМЕНТОВ В ШАПКЕ -->
-<script>
-    document.querySelector('.burger').addEventListener('click', function () {
-        document.querySelector('.menu2').classList.toggle('active');
-    });
-
-    document.querySelectorAll('.navbar1').forEach(item => {
-        item.addEventListener('click', function () {
-            document.querySelector('.menu2').classList.remove('active');
         });
     });
 </script>

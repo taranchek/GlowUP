@@ -143,8 +143,12 @@
 .nazvanie label {
     display: none;
 }
-
-@media screen and (max-width: 800px) {
+@media (max-width: 1470px) {
+    .navbar1 {
+        font-size: 20px;
+    }
+} 
+@media screen and (max-width: 1370px) {
 
     .nazvanie label {
         display: inline-block;
@@ -153,11 +157,14 @@
     .nazvanie>.menu2 {
         display: none;
     }
+    .cont {
+        justify-content: space-between;
+    }
 }
 
 .slider-image {
     display: none;
-    opacity: 0;
+    opacity: 0; 
     transition: opacity 0.3s;
 }
 
@@ -335,13 +342,13 @@
     flex: none !important;
 }
 @media (max-width: 1024px) {
-    .for-whom__blocks {
-        text-align: center;
-    }
     .zag {
         font-size: 42px;
         margin-top: 15px;
         margin-bottom: 20px;
+    }
+    .for-whom__block {
+        text-align: center;
     }
 }
 
@@ -353,9 +360,8 @@
     flex: none !important;
     margin-bottom: 80px;
 }
-
-.for-whom__block>h5 {
-    font-size: 24px;
+.learn__block > h5 {
+    font-weight: 600;
 }
 
 .learn-img {
@@ -384,6 +390,10 @@
 }
 .popular__blocks2 {
     margin-bottom: 70px;
+}
+.popular__block {
+    display: flex;
+    flex-direction: column;
 }
 .photo-doc {
     position: relative;
@@ -426,10 +436,13 @@
     height: auto;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1070px) {
     .popular__blocks, .popular__blocks2 {
         flex-direction: column;
         margin-bottom: 0px;
+    }
+    .popular__blocks {
+        width: 100%;
     }
     .popular__block {
         margin-bottom: 20px;
@@ -437,7 +450,16 @@
     }
     .learn__block {
         display: flex;
-        justify-content: space-between;
+    }
+    .learn-img {
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+    }
+}
+@media (max-width: 1435px) {
+    .popular__blocks {
+        width: 100%;
     }
 }
 
@@ -559,7 +581,7 @@
     font-family: toony_loons;
     font-weight: 5000;
     color: #3f3f3f;
-    width: 40px;
+
     /* Задаем фиксированную ширину для цифр */
 }
 
@@ -582,7 +604,7 @@ p {
 }
 
 /* Медиа-запрос для планшета */
-@media (max-width: 800px) {
+@media (max-width: 950px) {
     .content {
         flex-direction: row;
     }
@@ -593,7 +615,7 @@ p {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media (max-width: 576px) {
+@media (max-width: 785px) {
     .text {
         margin-left: 20px;
         margin-right: 20px;
@@ -699,7 +721,7 @@ p {
     object-fit: cover;
 }
 
-.column {
+.column, .column2 {
     display: grid;
     margin-top: 30px;
     font-family: Montserrat;
@@ -765,10 +787,34 @@ p {
     margin-right: 5px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1050px) {
+    .logo {
+        margin-top: 0;
+        align-items: center;
+    }
+    .oferta {
+        font-size: 18px;
+        align-items: center;
+    }
     .footer {
         flex-direction: column;
         align-items: stretch;
+        text-align: center;
+    }
+    .column {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .column2 {
+        display: flex;
+        justify-content: space-around;
+    }
+    .network > .footer-text {
+        display: none;
+    }
+    .img-net {
+        width: 40px;
     }
 }
 
@@ -1513,6 +1559,7 @@ p {
 /* СТРАНИЦА КУРСА */
 .course-cont {
     text-align: center;
+    align-items: center;
 }
 
 .zag-course {
@@ -1684,8 +1731,75 @@ p {
     color: #000;
     text-decoration: none;
 }
+@media screen and (max-width: 1575px) {
+    .nazv-course {
+        font-size: 42px;
+    }
+    .onisan-course {
+        font-size: 22px;
+    }
 
-@media screen and (max-width: 800px) {
+    .btn-course {
+        font-size: 26px;
+        position: static;
+    }
+    .course-img {
+        display: flex;
+        align-items: center;
+        width: 280px;
+        height: 381px;
+    }
+
+    .willbe {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .zag-willbe,
+    .zag-program {
+        padding-left: 15px;
+        padding-bottom: 25px;
+        font-size: 24px;
+    }
+
+    .text-willbe {
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    .zag-program {
+        padding-top: 30px;
+    }
+
+    .lesson,
+    .lesson2 {
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 15px 15px;
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    .lesson-nazv {
+        margin-top: 10px;
+    }
+
+    .lesson-opisan {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .show-more-btn3 {
+        width: 250px;
+        height: 60px;
+        font-size: 22px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width: 1200px) {
     .zag-course {
         font-size: 50px;
         margin-top: 15px;

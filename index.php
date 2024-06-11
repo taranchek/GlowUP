@@ -132,40 +132,31 @@
     <div class="screen">
         <div class="zag">Как проходит обучение?</div>
         <div class="content2">
-            <img src="img/obuch.png" alt="Изображение" class="img-obuch">
+            <img src="./img/obuch.png" alt="Изображение" class="img-obuch">
             <div class="text">
+
                 <div class="obuch">
                     <div class="obuch-num">1</div>
                     <div class="obuch-text">
-                        <div class="obuch-title">Занятия</div>
-                        <p>Занятия проходят в формате вебинаров. Просмотр видеозаписей лекций доступен в личном
-                            кабинете. Каждый урок доступен один раз в неделю, с учётом того, что домашнее задание по
-                            предыдущему уроку выполнено</p>
+                        <div class="obuch-title">Выбор курса</div>
+                        <p>На сайте представлено небольшое количесвто курсов, с их описанием, и для начала вам нужно выбрать и записаться на курс</p>
                     </div>
                 </div>
 
                 <div class="obuch">
                     <div class="obuch-num">2</div>
                     <div class="obuch-text">
-                        <div class="obuch-title">Домашнее задание</div>
-                        <p>Тестирование или практическое домашнее задание с проверкой и обратной связью</p>
+                        <div class="obuch-title">Занятия</div>
+                        <p>Занятия проходят в формате вебинаров. Просмотр видеозаписей лекций доступен в личном
+                            кабинете. Каждый урок доступен после прохождения предыдущеги урока</p>
                     </div>
                 </div>
 
                 <div class="obuch">
                     <div class="obuch-num">3</div>
                     <div class="obuch-text">
-                        <div class="obuch-title">Сопровождение</div>
-                        <p>Каждый студент может пообщаться с экспертами курса, получить помощь координатора по учебному
-                            процессу</p>
-                    </div>
-                </div>
-
-                <div class="obuch">
-                    <div class="obuch-num">4</div>
-                    <div class="obuch-text">
-                        <div class="obuch-title">Защита собственного проекта</div>
-                        <p>Получение сертификата, подтверждающего компетенцию</p>
+                        <div class="obuch-title">Практическая часть</div>
+                        <p>Тестирование и практическое задание по пройденным материалам курса</p>
                     </div>
                 </div>
 

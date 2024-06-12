@@ -13,7 +13,7 @@
 
 </head>
 
-<?php include "header.php" ?>
+<?php require_once "header.php" ?>
 
 <body>
 <div class="offer">
@@ -57,7 +57,7 @@
     </div>
 </div>
 
-<div class=" c-learn">
+<div class="c-learn">
     <div class="zag">Чему Вы научитесь</div>
     <div class="row for-whom__blocks">
         <div class="col-6 col-sm-4 learn__block">
@@ -112,17 +112,23 @@
         <div class="popular__block">
             <h3>Как подготовить <br> лицо к макияжу</h3>
             <img class="popular-img" src="img/women1.png" alt="">
-            <button class="popular-btn">Подробнее</button>
+            <a href="inactive_course.php?courseNumber=1">
+                <button class="popular-btn">Подробнее</button>
+            </a>
         </div>
         <div class="popular__block">
             <h3>Идеальный <br> макияж для себя</h3>
             <img class="popular-img" src="img/women2.png" alt="">
-            <button class="popular-btn">Подробнее</button>
+            <a href="inactive_course.php?courseNumber=2">
+                <button class="popular-btn">Подробнее</button>
+            </a>
         </div>
         <div class="popular__block">
-            <h3>Идеальные <br> стрелки</h3>
+            <h3>Натуральный <br> макияж</h3>
             <img class="popular-img" src="img/women3.png" alt="">
-            <button class="popular-btn">Подробнее</button>
+            <a href="inactive_course.php?courseNumber=3">
+                <button class="popular-btn">Подробнее</button>
+            </a>
         </div>
     </div>
     <a href="catalog.php" class="zag zag2">Посмотреть все курсы</a>
@@ -139,7 +145,8 @@
                     <div class="obuch-num">1</div>
                     <div class="obuch-text">
                         <div class="obuch-title">Выбор курса</div>
-                        <p>На сайте представлено небольшое количесвто курсов, с их описанием, и для начала вам нужно выбрать и записаться на курс</p>
+                        <p>На сайте представлено небольшое количесвто курсов, с их описанием, и для начала вам нужно
+                            выбрать и записаться на курс</p>
                     </div>
                 </div>
 

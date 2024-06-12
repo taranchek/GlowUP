@@ -15,7 +15,7 @@
 <body>
 <div class="content cont-rega">
     <div class="polya polya-rega">
-        <form id="register-form" onsubmit="checkFormData(); return false;">
+        <form id="register-form" onsubmit="sendData(); return false;">
             <div class="vxod-text">Регистрация</div>
             <div class="text-inp">Имя</div>
             <input type="text" name="name" class="pole-inp pole-inp2" required>
@@ -61,11 +61,12 @@
 <!--
 Модальное окно, которое отображается при указании уже занятой почты при регистрации
 -->
-<dialog class="dialog-window">
-    <p id="dialogText"></p>
-    <button class="dialog-button" id="closeDialog">Ок</button>
+<dialog class="modal1">
+    <div class="modal-content1">
+        <p id="dialogText"></p>
+        <button class="modal-btn" id="closeDialog">Ок</button>
+    </div>
 </dialog>
-</body>
 
 <?php include "footer.php" ?>
 
@@ -74,7 +75,7 @@
 отображает модальное окно с некоторым ответом от сервера, а также закрывает его
 -->
 <script>
-    function checkFormData() {
+    function sendData() {
         let formData = new FormData(document.getElementById('register-form'));
         let xhr = new XMLHttpRequest();
         xhr.open('POST', 'backend/register.php', true);
@@ -84,7 +85,7 @@
 
             document.querySelector('#closeDialog').onclick = function () {
                 document.querySelector('dialog').close();
-                if (xhr.status === 0) {
+                if (xhr.status === 201) {
                     location.replace("./entry.php")
                 }
             }

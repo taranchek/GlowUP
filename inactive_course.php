@@ -10,9 +10,8 @@
           integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 
-<?php include "header.php" ?>
-
 <?php
+require_once "header.php";
 require_once "backend/course.php";
 $courseData = getCourseByID($_GET["courseNumber"]);
 ?>
@@ -24,7 +23,10 @@ $courseData = getCourseByID($_GET["courseNumber"]);
         <div class="infa-course">
             <div class="nazv-course"><?php echo $courseData["name"] ?></div>
             <div class="onisan-course"><?php echo $courseData["description"] ?></div>
-            <button class="btn-course">Записаться на курс</button>
+            <form id="course-form" onsubmit="sendData(); return false;">
+                <input type="hidden" name="courseIDToAdd" value="<?php echo $courseData["ID"] ?>">
+                <button type="submit" class="btn-course">Записаться на курс</button>
+            </form>
         </div>
         <img class="course-img" src="img/<?php echo $courseData["pictureName"] ?>" alt="">
     </div>
@@ -91,37 +93,44 @@ $courseData = getCourseByID($_GET["courseNumber"]);
     <button class="show-more-btn3" id="show-more-btn3">Показать еще</button>
 </div>
 
-<div class="modal-overlay"></div>
-<div id="myModal" class="modal1">
+<dialog id="dialog" class="modal1">
     <div class="modal-content1">
-        <span class="close">&times;</span>
-        <p>Для записи на курс необходимо войти в аккаунт!</p>
-        <button class="register-btn"><a href="entry.php" class="register-link">Вход в аккаунт</a></button>
+        <span id="close" class="close">&times;</span>
+        <p id="dialogText"></p>
+        <button id="closeDialog" class="modal-btn">Ок</button>
     </div>
-</div>
+</dialog>
+
 </body>
 
 <?php include "footer.php" ?>
 
+<!--
+Функция, которая при записи на курс создает POST запрос и отправляет его на бэкенд,
+отображает модальное окно с некоторым ответом от сервера, а также закрывает его
+-->
 <script>
-    var modal = document.getElementById("myModal");
-    var overlay = document.querySelector(".modal-overlay");
-    var btn = document.querySelector(".btn-course");
-    var closeBtn = document.querySelector(".close");
-
-    btn.addEventListener("click", function () {
-        modal.style.display = "block";
-        overlay.style.display = "block";
-    });
-
-    closeBtn.onclick = function () {
-        modal.style.display = "none";
-        overlay.style.display = "none";
-    }
-
-    overlay.onclick = function () {
-        modal.style.display = "none";
-        overlay.style.display = "none";
+    function sendData() {
+        let formData = new FormData(document.getElementById('course-form'));
+        let xhr = new XMLHttpRequest();
+        xhr.open('POST', 'backend/course.php', true);
+        xhr.onreadystatechange = function () {
+            document.getElementById("dialogText").textContent = xhr.responseText;
+            if (xhr.status === 201) {
+                document.getElementById("closeDialog").textContent = "Вход в аккаунт";
+            }
+            document.getElementById("dialog").showModal();
+            document.getElementById("closeDialog").onclick = function () {
+                document.querySelector('dialog').close();
+                if (xhr.status === 201) {
+                    location.replace("./entry.php")
+                }
+            }
+            document.getElementById("close").onclick = function () {
+                document.querySelector('dialog').close();
+            }
+        };
+        xhr.send(formData);
     }
 </script>
 

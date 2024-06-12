@@ -34,32 +34,32 @@ session_start();
                 </div>
             </div>
             <!-- Выпадающее меню-шторка -->
-            <div class="dropdown-menuгг">
-                <div class="heart1">
-                    <img class="img-heart" src="img/heart.png" alt="">
-                    <a href="catalog.php" class="navbar1">Курсы</a>
-                </div>
-                <div class="heart1">
-                    <img class="img-heart" src="img/heart.png" alt="">
-                    <a href="comments.php" class="navbar1">Отзывы</a>
-                </div>
-                <div class="heart1">
-                    <img class="img-heart" src="img/heart.png" alt="">
-                    <a href="#contacts" class="navbar1">Контакты</a>
-                </div>
-                <div class="heart1">
-                    <img class="img-heart" src="img/heart.png" alt="">
-                    <a href="account.php" class="navbar1">Личный кабинет</a>
-                </div>
-                <div class="heart1">
-                    <img class="img-heart" src="img/heart.png" alt="">
-                    <?php if (!isset($_SESSION["userID"])) { ?>
-                        <a href="entry.php" class="navbar1">Вход</a>
-                    <?php } else { ?>
-                        <a href="backend/logout.php" class="navbar1">Выход</a>
-                    <?php } ?>
-                </div>
-            </div>
+<!--            <div class="dropdown-menuгг">-->
+<!--                <div class="heart1">-->
+<!--                    <img class="img-heart" src="img/heart.png" alt="">-->
+<!--                    <a href="catalog.php" class="navbar1">Курсы</a>-->
+<!--                </div>-->
+<!--                <div class="heart1">-->
+<!--                    <img class="img-heart" src="img/heart.png" alt="">-->
+<!--                    <a href="comments.php" class="navbar1">Отзывы</a>-->
+<!--                </div>-->
+<!--                <div class="heart1">-->
+<!--                    <img class="img-heart" src="img/heart.png" alt="">-->
+<!--                    <a href="#contacts" class="navbar1">Контакты</a>-->
+<!--                </div>-->
+<!--                <div class="heart1">-->
+<!--                    <img class="img-heart" src="img/heart.png" alt="">-->
+<!--                    <a href="account.php" class="navbar1">Личный кабинет</a>-->
+<!--                </div>-->
+<!--                <div class="heart1">-->
+<!--                    <img class="img-heart" src="img/heart.png" alt="">-->
+<!--                    --><?php //if (!isset($_SESSION["userID"])) { ?>
+<!--                        <a href="entry.php" class="navbar1">Вход</a>-->
+<!--                    --><?php //} else { ?>
+<!--                        <a href="backend/logout.php" class="navbar1">Выход</a>-->
+<!--                    --><?php //} ?>
+<!--                </div>-->
+<!--            </div>-->
         </div>
     </div>
 </header>

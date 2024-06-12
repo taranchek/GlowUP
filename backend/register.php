@@ -14,7 +14,7 @@ $email = $_POST['email'];
 $password = $_POST['password'];
 if (isEmailAvailable($email)) {
     register($name, $surname, $email, $password);
-    header("HTTP/1.1 0 OK");
+    header("HTTP/1.1 201 OK");
     echo "Вы успешно зарегистрированы! Теперь вы можете использовать ваши учетные данные для авторизации";
 } else
     echo "Указанный адрес почты уже занят другим пользователем!";

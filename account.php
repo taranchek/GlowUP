@@ -38,40 +38,68 @@ if (!isset($_SESSION["userID"])) {
             <div class="zag-acc">Номер телефона:</div>
             <div class="podz-acc">не указано</div>
         </div>
-        <button class="acc-btn"><a class="izma" href="#">Изменить</a></button>
+        <button class="acc-btn"><a class="izma" href="">Изменить</a></button>
     </div>
-    <div class="courses">
+    <div id="courses" class="courses">
         <div class="my-courses">Мои курсы</div>
-        <div class="course">
-            <div class="course-card1">
-                <div class="course-nazv">Как подготовить лицо к <br> макияжу</div>
-                <button class="course-btn"><a class="course-btn-a" href="active_course.php">Продолжить</a></button>
-            </div>
-        </div>
-        <div class="course">
-            <div class="course-card2">
-                <div class="course-nazv">Идеальные стрелки</div>
-                <button class="course-btn"><a class="course-btn-a" href="active_course.php">Продолжить</a></button>
-            </div>
-        </div>
-        <div class="course">
-            <div class="course-card3">
-                <div class="course-nazv">Свадебный макияж</div>
-                <button class="course-btn"><a class="course-btn-a" href="active_course.php">Продолжить</a></button>
-            </div>
-        </div>
-        <div class="course">
-            <div class="course-card4">
-                <div class="course-nazv">Идеальный макияж для себя</div>
-                <button class="course-btn"><a class="course-btn-a" href="active_course.php">Продолжить</a></button>
-            </div>
-        </div>
-        <button class="show-more-btn2" id="show-more-btn2">Показать все</button>
+        <?php
+        require_once "backend/course.php";
+        $coursesData = getCourseListByUserID($_SESSION["userID"]);
+        foreach ($coursesData as $row): ?>
+            <form id="course-form<?php echo $row["ID"] ?>" class="course" action="active_course.php">
+                <input type="hidden" name="courseID" value="<?php echo $row["ID"] ?>">
+                <div class="course-card"
+                     style="background: url('img/card<?php echo $row["ID"] ?>.png') no-repeat center;">
+                    <div class="course-nazv"><?php echo $row["name"] ?></div>
+                    <button type="submit" class="course-btn">Продолжить</button>
+                    <button type="button" id="remove-button" class="myRemoveButton"
+                            onclick="removeCourse(<?php echo $row["ID"] ?>);">&times;
+                    </button>
+                </div>
+            </form>
+        <?php endforeach ?>
+        <button class="show-more-btn2" id="show-more-btn2">Показать еще</button>
     </div>
 </div>
+
+<dialog id="dialog" class="modal1">
+    <div class="modal-content1">
+        <span id="modal-close" class="close">&times;</span>
+        <p>Вы уверены, что хотите удалить данный курс?</p>
+        <button id="modal-remove" class="modal-btn">Удалить</button>
+    </div>
+</dialog>
 </body>
 
 <?php include "footer.php" ?>
+
+<script>
+    function removeCourse(courseID) {
+        document.getElementById("dialog").showModal();
+
+        document.getElementById("modal-remove").onclick = function () {
+            let xhr = new XMLHttpRequest();
+            xhr.open('POST', 'backend/course.php', true);
+            xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xhr.send("courseIDToDelete=" + encodeURIComponent(courseID));
+            document.getElementById("dialog").close();
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    document.getElementById(`course-form${courseID}`).remove();
+                    // $( "#courses" ).load(location.href + " #courses");
+                    // $("#courses").load(" #courses > *");
+                    location.reload();
+                } else {
+                    console.error("Ошибка: " + xhr.status);
+                }
+            };
+        }
+
+        document.getElementById("modal-close").onclick = function () {
+            document.getElementById("dialog").close();
+        }
+    }
+</script>
 
 <script>
     const courses = document.querySelectorAll('.course');

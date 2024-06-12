@@ -7,6 +7,7 @@
     font-family: toony_loons;
     src: url(fonts/toony_loons.ttf.otf);
 }
+
 @font-face {
     font-family: Montserrat;
     src: url(fonts/Montserrat-Regular.ttf);
@@ -14,61 +15,27 @@
 
 
 
-/* Модальное окно для авторизации и регистрации */
-.dialog-window {
-    margin: auto;
-    max-width: 450px;
-    border-radius: 30px;
-    padding: 30px;
-    font-family: Raleway;
-}
-
-/* Кнопка в этом окне */
-.dialog-button {
-    margin: 30px auto auto;
-    display: block;
-    border-radius: 30px;
-    padding-inline: 40px;
-    padding-block: 10px;
-    font-size: 28px;
-    font-weight: 600;
-    font-family: Raleway;
-}
-
-/**********************************************/
-.cards-course {
-    padding-top: 15px;
-    margin-left: 140px;
-    margin-right: 140px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /*width: 75%;*/
-    text-align: center;
-    align-items: center;
-    font-family: Raleway;
+/********************************************/
+.myRemoveButton {
+    position: absolute;
+    color: #000000;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    background-color: #F4A2AA;
     font-size: 32px;
+    border: 9px white solid;
+    border-radius: 60px;
     font-weight: 600;
+    text-align: center;
+    right: 30px !important;
+    top: 30px;
+    outline: none;
 }
 
-/**********************************************/
-.card-course {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 70px;
-}
-
-.card-course:hover .photo-c {
-    opacity: 1;
-}
-
-.card-course:hover .description {
-    opacity: 1;
+/********************************************/
+.myRemoveButton:hover {
+    background-color: #e05c69;
 }
 
 
@@ -428,15 +395,44 @@
     font-size: 32px;
     font-weight: 600;
 }
+
 .popular__blocks2 {
     margin-bottom: 70px;
 }
+
 .popular__block {
     display: flex;
     flex-direction: column;
 }
+
+.cards-course {
+    padding-top: 15px;
+    margin-left: 140px;
+    margin-right: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.card-course {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 70px;
+}
+
 .photo-doc {
     position: relative;
+    cursor: pointer;
 }
 
 .photo-c {
@@ -461,13 +457,15 @@
     font-family: Montserrat;
     font-size: 20px;
     text-align: left;
+    pointer-events: none;
+    user-select: none;
 }
 
-.popular__block:hover .photo-c {
+.card-course:hover .photo-c {
     opacity: 1;
 }
 
-.popular__block:hover .description {
+.card-course:hover .description {
     opacity: 1;
 }
 
@@ -975,31 +973,14 @@ p {
 }
 
 
-
-
-/* Модальное окно */
-.modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* прозрачное чёрное затемнение */
-    z-index: 1;
-    display: none;
-}
-
 .modal1 {
-    display: none;
     position: fixed;
     z-index: 1;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background: url(img/card-modal.png) no-repeat center center;
     background-size: cover;
-    background-position: center;
+    background: url(img/card-modal.png) no-repeat center;
     width: 70%;
     max-width: 600px;
     padding: 20px;
@@ -1023,7 +1004,7 @@ p {
     cursor: pointer;
 }
 
-.register-btn {
+.modal-btn {
     background-color: transparent;
     cursor: pointer;
     width: 350px;
@@ -1038,7 +1019,7 @@ p {
 
 }
 
-.register-btn:hover {
+.modal-btn:hover {
     background-color: #e05c69;
     text-decoration: none;
 }
@@ -1359,7 +1340,7 @@ p {
     /* Используем flexbox для управления расположением элементов внутри блока */
     flex-direction: column;
     /* Располагаем элементы вертикально */
-    justify-content: space-between;
+    justify-content: flex-start;
     /* Выравниваем элементы по центру по вертикали */
     align-items: center;
     /* Выравниваем элементы по центру по горизонтали */
@@ -1375,32 +1356,13 @@ p {
     text-align: center;
 }
 
-.course-card1,
-.course-card2,
-.course-card3,
-.course-card4 {
+.course-card {
     position: relative;
     width: 797px;
     height: 350px;
     border-radius: 55px;
     display: grid;
     margin-bottom: 8px;
-}
-
-.course-card1 {
-    background: url(img/card1.png) no-repeat center;
-}
-
-.course-card2 {
-    background: url(img/card2.png) no-repeat center;
-}
-
-.course-card3 {
-    background: url(img/card3.png) no-repeat center;
-}
-
-.course-card4 {
-    background: url(img/card4.png) no-repeat center;
 }
 
 .course-nazv {
@@ -1484,10 +1446,7 @@ p {
         width: 100%;
     }
 
-    .course-card1,
-    .course-card2,
-    .course-card3,
-    .course-card4 {
+    .course-card {
         width: 100%;
     }
 
@@ -1516,10 +1475,7 @@ p {
         font-size: 16px;
     }
 
-    .course-card1,
-    .course-card2,
-    .course-card3,
-    .course-card4 {
+    .course-card {
         height: auto;
     }
 

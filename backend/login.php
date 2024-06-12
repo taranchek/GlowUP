@@ -17,7 +17,7 @@ $email = $_POST['email'];
 $password = $_POST['password'];
 if (isEmailExist($email)) {
     if (isUserLoggedIn($email, $password)) {
-        header("HTTP/1.1 0 OK");
+        header("HTTP/1.1 201 OK");
         echo "Вы успешно авторизованы! Сейчас вы будете перенаправлены в личный кабинет";
     } else {
         echo "Некорректный пароль, повторите попытку!";

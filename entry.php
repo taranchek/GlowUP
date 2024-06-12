@@ -15,7 +15,7 @@
 <body>
 <div class="content cont-vxod">
     <div class="polya polya-vxod">
-        <form id="entry-form" onsubmit="checkFormData(); return false;">
+        <form id="entry-form" onsubmit="sendData(); return false;">
             <div class="vxod-text">Вход в аккаунт</div>
             <div class="text-inp">Почта</div>
             <input type="text" name="email" class="pole-inp pole-inp2" required>
@@ -32,11 +32,12 @@
 <!--
 Модальное окно, которое выводит некоторое сообщение при авторизации пользователя
 -->
-<dialog class="dialog-window">
-    <p id="dialogText"></p>
-    <button class="dialog-button" id="closeDialog">Ок</button>
+<dialog class="modal1">
+    <div class="modal-content1">
+        <p id="dialogText"></p>
+        <button class="modal-btn" id="closeDialog">Ок</button>
+    </div>
 </dialog>
-</body>
 
 <?php include "footer.php" ?>
 
@@ -45,7 +46,7 @@
 отображает модальное окно с некоторым ответом от сервера, а также закрывает его
 -->
 <script>
-    function checkFormData() {
+    function sendData() {
         let formData = new FormData(document.getElementById('entry-form'));
         let xhr = new XMLHttpRequest();
         xhr.open('POST', 'backend/login.php', true);
@@ -55,7 +56,7 @@
 
             document.querySelector('#closeDialog').onclick = function () {
                 document.querySelector('dialog').close();
-                if (xhr.status === 0) {
+                if (xhr.status === 201) {
                     location.replace("./account.php")
                 }
             }

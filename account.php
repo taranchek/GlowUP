@@ -27,7 +27,7 @@ if (!isset($_SESSION["userID"])) {
 <div class="account">
     <div class="profile">
         <div class="name-girl">
-            <img src="img/profile.png" alt="Фото">
+            <img class="girl-img" src="img/profile.png" alt="Фото">
             <div class="name-girl-text"><?= $_SESSION["name"] ?> <br> <?= $_SESSION["surname"] ?></div>
         </div>
         <div class="text-acc">
@@ -48,8 +48,8 @@ if (!isset($_SESSION["userID"])) {
         foreach ($coursesData as $row): ?>
             <form id="course-form<?php echo $row["ID"] ?>" class="course" action="active_course.php">
                 <input type="hidden" name="courseID" value="<?php echo $row["ID"] ?>">
-                <div class="course-card"
-                     style="background: url('img/card<?php echo $row["ID"] ?>.png') no-repeat center;">
+                <div class="course-card">
+                    <img class="course-photo" src="img/<?php echo $row["pictureName"] ?>" alt="">
                     <div class="course-nazv"><?php echo $row["name"] ?></div>
                     <button type="submit" class="course-btn">Продолжить</button>
                     <button type="button" id="remove-button" class="myRemoveButton"

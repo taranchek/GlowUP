@@ -126,12 +126,31 @@
         <div class="popular__block">
             <h3>Натуральный <br> макияж</h3>
             <img class="popular-img" src="img/women3.png" alt="">
-            <a href="inactive_course.php?courseNumber=3">
+            <a href="inactive_course.php?courseNumber=7">
                 <button class="popular-btn">Подробнее</button>
             </a>
         </div>
     </div>
     <a href="catalog.php" class="zag zag2">Посмотреть все курсы</a>
+</div>
+
+<div class="author">
+    <div class="zag-aurhor">Автор курсов</div>
+    <div class="author-blocks">
+        <div class="author-block1">
+            <div class="name-author"><i>Анна Романова</i></div>
+            <div class="infa-author">- 10 лет опыта работы в области макияжа. <br>
+- Создание собственного бренда косметики "GlowUP Makeup" <br>
+- Проведение мастер-классов по макияжу для известных звезд и моделей. <br>
+- Публикации статей о красоте и макияже в известных журналах и онлайн-платформах. <br>
+- Победа в номинации "Лучший визажист года" на Beauty Awards. <br>
+<br>
+Анна Романова известна своим профессионализмом, творческим подходом и способностью делиться знаниями с другими. Ее курсы по макияжу пользуются огромной популярностью благодаря индивидуальному подходу каждому ученику и умению передать тонкости мастерства в доступной форме.</div>
+        </div>
+        <div class="author-block">
+            <img class="img-author" src="img/author.png" alt="">
+        </div>
+    </div>
 </div>
 
 <div class="c-obuch">

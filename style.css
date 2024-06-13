@@ -357,6 +357,11 @@
     .for-whom__block {
         text-align: center;
     }
+    .for-whom__block>h5 {
+        font-size: 32px;
+        margin-top: 25px;
+        font-weight: 700;
+    }
 }
 
 
@@ -494,6 +499,9 @@
         height: 40px;
         margin-right: 20px;
     }
+    .zag2 {
+        font-size: 28px;
+    }
 }
 @media (max-width: 1435px) {
     .popular__blocks {
@@ -523,6 +531,8 @@
     color: #000;
     margin-top: 35px;
 }
+
+
 
 
 .btn-up {
@@ -574,6 +584,109 @@
 }
 
 /* СТРАНИЦА АВТОРА */
+.author {
+    background: url(img/bg-author.png) no-repeat center center;
+    margin: 0 !important;
+    background-size: cover;
+    margin-bottom: 65px;
+}
+.zag-aurhor {
+    font-family: toony_loons;
+    font-size: 48px;
+    font-weight: 550;
+    padding-top: 40px;
+    text-align: center;
+}
+.author-blocks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.author-block1 {
+    padding-left: 100px;
+    font-family: Montserrat;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+.name-author {
+    font-size: 36px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+.infa-author {
+    font-size: 20px;
+    font-weight: 550;
+}
+.author-block {
+    padding-right: 100px;
+}
+@media (max-width: 1350px) {
+    .author-block {
+        padding-right: 50px;
+    }
+    .author-block1 {
+        padding-left: 50px;
+    }
+    .img-author {
+        width: 510px;
+    }
+}
+@media (max-width: 1000px) {
+    .author-blocks {
+        align-items: end;
+    }
+    .author-block {
+        padding-right: 50px;
+    }
+    .author-block1 {
+        padding-left: 50px;
+        padding-right: 50px;
+        background-color: #fbdee19f;
+        padding-bottom: 30px;
+    }
+    .img-author {
+        width: 510px;
+    }
+    .author-block {
+        position: absolute;
+        right: 0;
+        padding-right: 0px;
+    }
+    .author-block1 {
+        z-index: 1;
+    }
+    .zag-aurhor {
+        font-size: 42px;
+    }
+}
+@media (max-width: 500px) {
+    .author-block {
+        position: relative;
+        text-align: center;
+    }
+    .author-block1 {
+        padding-bottom: 15px;
+    }
+    .img-author {
+        width: 250px;
+    }
+    .author-blocks {
+        display: block;
+        margin-bottom: 15px;
+    }
+    .zag-aurhor {
+        font-size: 42px;
+    }
+    .name-author {
+        font-size: 32px;
+        font-weight: 550;
+        padding-bottom: 15px;
+    }
+    .infa-author {
+        font-size: 20px;
+        font-weight: 550;
+    }
+}
 
 .c-obuch {
     background: url(img/bg3.png) no-repeat center center;
@@ -759,7 +872,7 @@ p {
     object-fit: cover;
 }
 
-.column, .column2 {
+.column, .columnn {
     display: grid;
     margin-top: 30px;
     font-family: Montserrat;
@@ -825,26 +938,55 @@ p {
     margin-right: 5px;
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1050px) {    
+    .column {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
     .logo {
         margin-top: 0;
-        align-items: center;
+
+        padding-right: 15px;
     }
     .oferta {
         font-size: 18px;
-        align-items: center;
+
     }
     .footer {
         flex-direction: column;
         align-items: stretch;
         text-align: center;
     }
-    .column {
+
+    .columnn {
         display: flex;
         justify-content: space-around;
-        align-items: center;
     }
-    .column2 {
+    .network > .footer-text {
+        display: none;
+    }
+    .img-net {
+        width: 40px;
+    }
+}
+@media screen and (max-width: 450px) {    
+    .column {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo {
+        padding-right: 0px;
+    }
+    .oferta {
+        display: none;
+    }
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .columnn {
         display: flex;
         justify-content: space-around;
     }
@@ -1262,7 +1404,7 @@ p {
     font-weight: 600;
     color: #000;
     padding: 0 150px;
-
+    margin-bottom: 30px;
 }
 
 .profile {
@@ -1271,7 +1413,6 @@ p {
     background-color: #FBDEE1;
     border-radius: 55px;
     width: 510px;
-    height: 760px;
     text-align: center;
 }
 
@@ -1293,7 +1434,7 @@ p {
     font-size: 36px;
     display: inline;
     text-align: left;
-
+    word-break: break-all;
 }
 
 .text-acc {
@@ -1316,6 +1457,7 @@ p {
     font-weight: 600;
     text-align: center;
     margin-top: 80px;
+    margin-bottom: 30px;
 }
 
 .acc-btn:hover {
@@ -1345,6 +1487,7 @@ p {
     align-items: center;
     /* Выравниваем элементы по центру по горизонтали */
     margin-bottom: 25px;
+    min-width: 510px;
 }
 
 .course {
@@ -1357,20 +1500,23 @@ p {
 }
 
 .course-card {
+    background: url(img/card.png);
     position: relative;
     width: 797px;
     height: 350px;
     border-radius: 55px;
-    display: grid;
+    display: flex;
     margin-bottom: 8px;
 }
-
+.course-photo {
+    width: 268px;
+    border-radius: 55px;
+}
 .course-nazv {
     margin-top: 21px;
     font-size: 32px;
     font-weight: 600;
-    margin-right: 100px;
-    margin-left: 327px;
+    margin-left: 25px;
     text-align: left;
 }
 
@@ -1398,7 +1544,9 @@ p {
     background-color: #e05c69;
 ;
 }
-
+.girl-img {
+    margin-right: 15px;
+}
 .show-more-btn2 {
     font-family: Montserrat;
     font-weight: 550;
@@ -1418,85 +1566,182 @@ p {
 ;
 }
 
-@media only screen and (max-width: 1024px) {
+@media (max-width: 1650px) {
     .account {
-        display: grid;
-    }
+        padding: 0 100px;
 
+    }
+}
+@media (max-width: 1550px) {
+    .account {
+        padding: 0 50px;
+    }
+}
+@media (max-width: 1450px) {
+    .course-card {
+        width: 700px;
+        height: 307px;
+    }
+    .course-photo {
+        width: 237px;
+    }
+}
+@media (max-width: 1350px) {
+    .account {
+        padding: 0 25px;
+    }
+}
+@media (max-width: 1270px) {
+    .course-card {
+        width: 600px;
+        height: 264px;
+        background-size: cover;
+    }
+    .course-photo {
+        width: 203px;
+    }
+    .account {
+        padding: 0 25px;
+    }
     .profile {
-        width: 100%;
-        height: auto;
-        padding: 20px;
-    }
-
-    .text-acc {
+        padding: 15px;
+        width: 400px;
         text-align: center;
-        padding-left: 0;
     }
-
     .name-girl {
-        padding: 0;
+        padding-top: 40px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
-
-    .name-girl-text {
-        text-align: center;
-    }
-
-    .acc-btn {
-        width: 100%;
-    }
-
-    .course-card {
-        width: 100%;
-    }
-
     .course-nazv {
-        text-align: center;
-        margin-right: 0;
-        margin-left: 0;
+        margin-top: 21px;
+        font-size: 28px;
+        font-weight: 600;
     }
-
+    
     .course-btn {
-        width: 100%;
-        margin: 20px 0;
+        position: absolute;
+        color: #000000;
+        cursor: pointer;
+        width: 300px;
+        height: 70px;
+        background-color: #F4A2AA;
+        font-size: 32px;
+        border: 9px white solid;
+        border-radius: 60px;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 170px;
+        right: 40px !important;
+        bottom: 30px;
+        outline: none;
+        /* Убирает обводку при фокусе */
     }
-
-    .show-more-btn2 {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .name-girl-text {
-        font-size: 24px;
-    }
-
     .text-acc {
-        font-size: 16px;
+        padding-left: 15px;
+        margin: auto;
+        font-size: 22px;
+        text-align: left;
     }
+    .zag-acc {
+        padding-top: 35px;
+    }
+    
+}
 
+@media (max-width: 1100px) {
     .course-card {
-        height: auto;
+        width: 500px;
+        height: 220px;
     }
-
+    .course-photo {
+        width: 172px;
+    }
     .course-nazv {
         font-size: 24px;
     }
-
+    .myRemoveButton {
+        width: 50px;
+        height: 50px;
+        border: 2px white solid;
+    }
     .course-btn {
-        height: auto;
-        font-size: 16px;
+        width: 200px;
+        height: 50px;
+        font-size: 24px;
+        border: 2px white solid;
+    }
+    .show-more-btn2 {
+        width: 300px;
+        height: 70px;
+        font-size: 32px;
     }
 
-    .show-more-btn2 {
+}
+@media (max-width: 960px) {
+    .courses {
+        margin-top: 20px;
+    }
+    .comment {
+        padding-bottom: 10px;
+    }
+    .account {
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+    }
+    .profile {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: 500px;
+    }
+    .course-card {
+        width: 500px;
+        height: 220px;
+    }
+    .course-photo {
+        width: 172px;
+    }
+    .course-nazv {
         font-size: 24px;
     }
 }
-
-
-
-
-
+@media (max-width: 550px) {
+    .courses {
+        min-width: 0;
+    }
+    .comment-text {
+        font-size: 44px;
+    }
+    .name-girl-text {
+        font-size: 28px;
+    }
+    .girl-img {
+        width: 100px;
+        margin-right: 7px;
+    }
+    .acc-btn {
+        margin-top: 40px;
+        font-size: 28px;
+    }
+    .account {
+        padding: 0 5px;
+    }
+    .profile {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: 400px;
+    }
+    .course-card {
+        width: 400px;
+        height: 220px;
+    }
+    .course-photo {
+        display: none;
+    }
+}
 
 
 
@@ -1898,15 +2143,17 @@ p {
     text-decoration: none;
     width: 235px;
     height: 110px;
+    display: flex;
+    align-items: center;
 }
 .lesson-num2 {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 550;
     text-decoration: underline;
 }
 
 .lesson-nazv2 {
-    font-size: 19px;
+    font-size: 16px;
     font-weight: 500;
     margin-top: 5px;
 }
@@ -1929,6 +2176,72 @@ p {
 .theory-learn {
     margin-top: 40px;
     font-size: 24px;
+}
+.test {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .lesson-cont {
+        margin-left: 30px;
+    }
+    .lesson3 {
+        padding: 7px 10px;
+        margin-bottom: 20px;
+        width: 200px;
+        height: 100px;
+    }
+    .lesson-num2 {
+        font-size: 20px;
+    }
+    .lesson-nazv2 {
+        font-size: 16px;
+    }
+    .learn2 {
+        margin: 0 30px;
+    }
+}
+@media (max-width: 720px) {
+    .lesson-cont {
+        margin-left: 10px;
+    }
+    .lesson3 {
+        padding: 7px 10px;
+        margin-bottom: 20px;
+        width: 85px;
+        height: 45px;
+    }
+    .lesson-num2, .test {
+        font-size: 16px;
+    }
+    .test {
+        display: block;
+    }
+    .learn2 {
+        padding: 10px 15px;
+        margin: 0 15px;
+        border-radius: 50px;
+    }
+    .lesson-nazv2 {
+        display: none;
+    }
+    .zag-learn {
+        font-size: 40px;
+        font-weight: 550;
+    }
+    .nazv-learn {
+        font-size: 20px;
+        font-family: Montserrat;
+    }
+    .theory-learn {
+        margin-top: 40px;
+        font-size: 16px;
+    }
+}
+@media (max-width: 455px) {
+    .lesson3 {
+        display: none;
+    }
 }
 
 .wrapper {
@@ -1972,7 +2285,19 @@ p {
     transition: 0.5s;
     margin-right: 45px;
 }
-
+@media (max-width: 720px) {
+    .cta {
+        padding: 5px 15px;
+        font-size: 25px;
+        font-weight: 500;
+        color: white;
+        background: #F4A2AA;
+        transition: 1s;
+        border-radius: 20px;
+        box-shadow: 6px 6px 0 #E3E3E3;
+        transform: skewX(-15deg);
+    }
+}
 span {
     transform: skewX(15deg)
 }

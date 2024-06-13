@@ -8,7 +8,7 @@
         <a class="footer-text" href="comments.php">Отзывы</a>
         <a class="footer-text" href="account.php">Личный кабинет</a>
     </div>
-    <div class="column2">
+    <div class="columnn">
         <div class="network">
             <img class="img-net" src="img/insta.png">
             <a class="footer-text" href="#">@glowup</a>
@@ -22,7 +22,7 @@
             <a class="footer-text" href="#">glow_up@bk.ru</a>
         </div>
     </div>
-    <div class="column2">
+    <div class="columnn">
         <div class="network">
             <img class="img-net" src="img/vk.png">
             <a class="footer-text" href="#">@glowup</a>

@@ -127,6 +127,7 @@
             <div class="lesson-nazv2">Советы по уходу за кожей</div>
         </a></div>
         <div class="lesson3"><a class="lesson-a2" href="">
+            <div class="test">Тест</div>
             <div class="lesson-nazv2">Итоговое тестирование</div>
         </a></div>
     </div>
